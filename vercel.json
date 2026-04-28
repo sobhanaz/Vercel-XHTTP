@@ -4,5 +4,9 @@
   "rewrites": [
     { "source": "/(.*)", "destination": "/api/index" }
   ],
-  "trailingSlash": false
+  "functions": {
+    "api/index.js": {
+      "maxDuration": 10
+    }
+  }
 }
